@@ -36,6 +36,7 @@ export const Transition = () => {
 
     const [selectedAssignee, setSelectedAssignee] = useState<string>('');
     const [taskList, setTaskList] = useState<Task[]>(tasks);
+    const [isShowList, setIsShowList] = useState<boolean>(false);
 
     const onClickAssignee = (assignee: string) =>{
         setSelectedAssignee(assignee);
@@ -53,7 +54,10 @@ export const Transition = () => {
             </div>
             <br />
             <button onClick={() => onClickAssignee('')}>リセット</button>
-            <TaskList taskList={taskList} />
+            <br />
+            <br />
+            <button onClick={() => setIsShowList(!isShowList)}>表示/非表示</button>
+            {isShowList && <TaskList taskList={taskList} />}
         </div>
     )
 }
