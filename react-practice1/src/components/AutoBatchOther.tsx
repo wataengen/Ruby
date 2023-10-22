@@ -12,8 +12,8 @@ export const AutoBatchOther = () => {
         const [todos, setTodos] = useState<Todo[] | null>(null);
         const [isFinishApi, setIsFinishApi] = useState<boolean>(false);
         const [state3, setState3] = useState<string>('');
+        
     const onClickExecutApi = () => {        
-
         fetch('https://jsonplaceholder.typicode.com/todos')
         .then((res) => res.json())
         .then((data) =>{
