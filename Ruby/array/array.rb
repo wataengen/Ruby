@@ -41,6 +41,29 @@ puts f
 
 puts f.delete_at(100)
 
+#多重代入
 g, h = 1, 2
 
 puts g, h
+
+#配列を使って代入
+i, j = [1, 2]
+
+puts i, j
+
+#右辺の数が少ない場合はnilが入る
+k, l = [10]
+
+puts k, l
+
+#右辺が多い場合ははみ出した値が切り捨てられる
+m, n  = [100, 200, 300,]
+puts m, n
+
+#divmod（割り算の商と余りを配列返すメソッド）を使用するときは別々の変数に代入するとすっきりする
+quo_rem = 14.divmod(3)
+#14/3 = 4あまり2
+puts quo_rem[0], quo_rem[1]
+
+quotient, remainder = 14.divmod(3)
+puts quotient, remainder
