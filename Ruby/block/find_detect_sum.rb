@@ -10,8 +10,3 @@ puts ""
 print "各要素を2倍して合計する：", numbers.sum{ |n| n *2 }
 puts ""
 print "初期値に5を指定する：", numbers.sum(5)
-puts ""
-
-#文字列を連結する
-chars = ['a', 'b', 'c']
-print "文字列連結：", chars.sum('')
