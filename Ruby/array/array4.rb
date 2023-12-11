@@ -14,15 +14,15 @@ puts ""
 
 c = [1]
 d = [2,3]
-c.concat(d)
+c.concat(d) #cは変更される（破壊的）
 print c
 puts ""
-print d
+print d #dは変更されない（非破壊的）
 puts ""
 
 e = [1]
 f = [2,3]
-print e + f
+print e + f #eもfも変更されない（非破壊的）
 puts ""
 print e
 puts ""
