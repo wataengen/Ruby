@@ -12,3 +12,20 @@ b.delete(5)
 print b
 puts ""
 
+c = [1]
+d = [2,3]
+c.concat(d)
+print c
+puts ""
+print d
+puts ""
+
+e = [1]
+f = [2,3]
+print e + f
+puts ""
+print e
+puts ""
+print f
+puts ""
+
