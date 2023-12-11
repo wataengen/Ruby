@@ -15,3 +15,10 @@ print %w(
     melon
     orange
 ), "\n" #=> ["apple", "melon", "orange"]
+
+#値にスペースを含めたい場合はバックスラッシュでエスケープする
+print %w(big\ apple small\ melon orange), "\n"
+
+#式展開や改行文字、タブ文字などを含めたい場合は、%Wを使う
+prefix = 'This is'
+print %W(#{prefix}\ an\ apple small\nmelon orange) #=> ["This is an apple", "small\nmelon", "orange"]
