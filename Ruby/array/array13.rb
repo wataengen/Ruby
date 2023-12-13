@@ -22,3 +22,11 @@ print str.upcase!, "\n" #=>DEFAULT
 
 #1番目の要素だけが大文字になり、ほかは変わらない
 print b, "\n" #=>["DEFAULT", "default", "default", "default", "default"]
+
+c = Array.new(5, 0)
+print c, "\n" #=>[0, 0, 0, 0, 0]
+#1番目の要素を取得する
+n = c[0]
+print n #=>0
+#数値だと破壊的な変更（たとえば強制的に負の数に変更するなど）は出来ない
+#n.negative!
